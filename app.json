@@ -1,11 +1,11 @@
 {
-    "name": "Auto Filter Bot",
-    "description": "Auto Filter Bot with Heroku Deploy",
+    "name": "Filter Bot",
+    "description": "Filter Bot with Heroku Deploy",
     "keywords": [
       "telegram"
     ],
     "stack": "container",
-    "repository": "https://github.com/Tamilupdates/Auto-Filter-Bot-Railway",
+    "repository": "https://github.com/Tamilupdates/Filter-Bot-Heroku",
     "env": {
         "CONFIG_FILE_URL": {
             "description": "Config File URL",
