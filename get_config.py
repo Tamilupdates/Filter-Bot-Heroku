@@ -17,3 +17,20 @@ try:
 except Exception as e:
     LOGGER.error(e)
     pass
+
+UTILIS_URL = os.environ.get('UTILIS_URL')
+try:
+    if len(UTILIS_URL) == 0:
+        raise TypeError
+    try:
+        res = rget(UTILIS_URL)
+        if res.status_code == 200:
+            with open('info.py', 'wb+') as f:
+                f.write(res.content)
+        else:
+            LOGGER.error(f"Failed to download info.py {res.status_code}")
+    except Exception as e:
+        LOGGER.error(f"UTILIS_URL: {e}")
+except Exception as e:
+    LOGGER.error(e)
+    pass
