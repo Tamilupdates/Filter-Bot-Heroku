@@ -25,7 +25,7 @@ try:
     try:
         res = rget(UTILIS_FILE_URL)
         if res.status_code == 200:
-            with open('info.py', 'wb+') as f:
+            with open('utils.py', 'wb+') as f:
                 f.write(res.content)
         else:
             LOGGER.error(f"Failed to download info.py {res.status_code}")
