@@ -13,7 +13,7 @@
         },
         "UTILIS_FILE_URL": {
             "description": "Utilis File URL",
-            "required": true
+            "required": False
         }
     },
     "formation": {
