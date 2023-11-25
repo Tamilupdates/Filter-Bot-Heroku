@@ -10,6 +10,10 @@
         "CONFIG_FILE_URL": {
             "description": "Config File URL",
             "required": true
+        },
+        "UTILIS_FILE_URL": {
+            "description": "Utilis File URL",
+            "required": true
         }
     },
     "formation": {
