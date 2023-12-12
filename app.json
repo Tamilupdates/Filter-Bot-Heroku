@@ -10,7 +10,7 @@
         "CONFIG_FILE_URL": {
             "description": "Config File URL",
             "required": true
-        },
+        }
     },
     "formation": {
     "worker": {
