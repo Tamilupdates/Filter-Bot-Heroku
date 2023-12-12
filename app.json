@@ -5,16 +5,11 @@
       "telegram"
     ],
     "stack": "container",
-    "repository": "https://github.com/Tamilupdates/Filter-Bot-V1-Heroku",
+    "repository": "https://github.com/Tamilupdates/Filter-Bot-Heroku",
     "env": {
         "CONFIG_FILE_URL": {
             "description": "Config File URL",
             "required": true
-        },
-        "UTILIS_FILE_URL": {
-            "description": "Utilis File URL",
-            "required": false
-        }
     },
     "formation": {
     "worker": {
