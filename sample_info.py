@@ -14,9 +14,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '14553761'))                                 # Recommended
-API_HASH = environ.get('API_HASH', 'a1cab49dcdfd2eb3bea5e5a552c5d479')          # Recommended
-BOT_TOKEN = environ.get('BOT_TOKEN', "")                                        # Recommended
+API_ID = int(environ.get('API_ID', '14553761'))
+API_HASH = environ.get('API_HASH', 'a1cab49dcdfd2eb3bea5e5a552c5d479')
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -24,7 +24,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS', '')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '604152966').split()]    # Recommended
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '604152966').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -34,18 +34,19 @@ UPDATES_CHANNEL = int(updates_channel) if updates_channel and id_pattern.search(
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "")                                  # Recommended
+DATABASE_URL = environ.get('DATABASE_URL', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Filterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegramfiles')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))                               # Recommended
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Nanthakps')                         # Recommended
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Nanthakps')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION",
+
 '''<b>
 🗂️ File : {file_name}
 
@@ -100,11 +101,12 @@ if SELF_DELETE == "True":
     SELF_DELETE = True
 
 # Updates Button
-UPDATES_BTN_NAME = "⚡️ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚡️"                        # Recommended
-UPDATES_BTN_URL = "https://telegram.me/Nanthakps"                       # Recommended
+UPDATES_BTN_NAME = "⚡️ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚡️"
+UPDATES_BTN_URL = "https://telegram.me/Nanthakps"
 
 # Subscribe Button
-SUBSCRIBE_BTN_NAME = "⚡️ ꜱᴜʙꜱᴄʀɪʙᴇ ᴄʜᴀɴɴᴇʟ ⚡️ "                         # Recommended
-SUBSCRIBE_BTN_URL = "https://telegram.me/Nanthakps"                     # Recommended
+SUBSCRIBE_BTN_NAME = "⚡️ ꜱᴜʙꜱᴄʀɪʙᴇ ᴄʜᴀɴɴᴇʟ ⚡️ "
+SUBSCRIBE_BTN_URL = "https://telegram.me/Nanthakps"
+
 
 ## DEVELOPED BY ~ KPS 😎 ###

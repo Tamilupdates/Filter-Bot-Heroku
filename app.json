@@ -1,21 +1,24 @@
 {
-    "name": "Filter Bot",
-    "description": "Filter Bot with Heroku Deploy",
-    "keywords": [
-      "telegram"
-    ],
-    "stack": "container",
-    "repository": "https://github.com/Tamilupdates/Filter-Bot-Heroku",
-    "env": {
-        "CONFIG_FILE_URL": {
-            "description": "Config File URL",
-            "required": true
-        }
-    },
-    "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "Basic"
-    }
+  "name": "Filter Bot",
+  "description": "Filter Bot with Heroku Deploy",
+  "keywords": [
+    "telegram"
+  ],
+  "repository": "https://github.com/Tamilupdates/Filter-Bot-Heroku",
+  "env": {
+      "CONFIG_FILE_URL": {
+          "description": "Config File URL",
+          "required": true
+      }
+  },
+  "buildpacks": [{
+      "url": "heroku/python"
+  }],
+  "formation": {
+      "worker": {
+          "quantity": 1,
+          "size": "basic"
+      }
   }
 }
+
